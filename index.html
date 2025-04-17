@@ -1,37 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lab 10 - API Calls</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>API Call Demo</h1>
 
+  <h1>Nightstalker API Lab</h1>
+  <p style="text-align: center;">Use API calls to fetch, create, update, and store posts with Void-class flair.</p>
+
+  <!-- Buttons -->
   <div class="buttons">
     <button id="fetchBtn">Fetch Data with fetch()</button>
     <button id="xhrBtn">Fetch Data with XHR</button>
   </div>
 
+  <!-- Output -->
   <div id="output" class="output-section"></div>
 
+  <!-- POST Form -->
   <form id="postForm">
-    <h2>Create a New Post (POST)</h2>
-    <input type="text" id="postTitle" placeholder="Title" required />
-    <textarea id="postBody" placeholder="Body" required></textarea>
+    <h2>Create New Post (POST)</h2>
+    <input type="text" id="postTitle" placeholder="Post Title" required />
+    <textarea id="postBody" placeholder="Post Body" rows="4" required></textarea>
     <button type="submit">Submit Post</button>
   </form>
 
+  <!-- PUT Form -->
   <form id="putForm">
-    <h2>Update a Post (PUT)</h2>
-    <input type="number" id="updateId" placeholder="Post ID" required />
+    <h2>Update Post (PUT)</h2>
+    <input type="number" id="updateId" placeholder="Post ID to Update" required />
     <input type="text" id="updateTitle" placeholder="Updated Title" required />
-    <textarea id="updateBody" placeholder="Updated Body" required></textarea>
+    <textarea id="updateBody" placeholder="Updated Body" rows="4" required></textarea>
     <button type="submit">Update Post</button>
   </form>
 
+  <!-- Stored Posts Section -->
+  <section id="storedPosts" class="stored-posts">
+    <!-- JS will fill this in -->
+  </section>
+
   <script src="script.js"></script>
-  <div id="storedPosts"></div>
 </body>
 </html>
