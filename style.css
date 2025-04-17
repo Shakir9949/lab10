@@ -1,0 +1,91 @@
+/* Background and Base Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(160deg, #0d0d0d, #1a0026);
+    color: #e0e0ff;
+    min-height: 100vh;
+  }
+  
+  /* Headings */
+  h1, h2 {
+    text-align: center;
+    color: #b78aff;
+    text-shadow: 0 0 10px #b78aff80;
+  }
+  
+  /* Button Styles */
+  button {
+    padding: 12px 18px;
+    margin: 5px;
+    background-color: #6a0dad;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px #a974ff80;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #854ce6;
+    box-shadow: 0 0 15px #a974ff;
+  }
+  
+  /* Layout Buttons in Center */
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Output Section */
+  .output-section {
+    background: rgba(24, 0, 36, 0.9);
+    border: 1px solid #6a0dad80;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px #6a0dad80;
+    white-space: pre-wrap;
+  }
+  
+  /* Forms */
+  form {
+    background: rgba(35, 0, 50, 0.85);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #5522aa60;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #a974ff80;
+    background-color: #1a0026;
+    color: #e0e0ff;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    outline: none;
+    border-color: #cba8ff;
+    box-shadow: 0 0 5px #cba8ff80;
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
